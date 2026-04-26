@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import express from 'express'
 import { authRouter } from './auth/auth.controller'
 import { productsRouter } from './products/products.controller'

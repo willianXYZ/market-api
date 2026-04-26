@@ -1,3 +1,4 @@
 .env
 node_modules
 dist
+JWT_SECRET = 'mercado_secreto_123'

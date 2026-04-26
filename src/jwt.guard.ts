@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express'
 import jwt from 'jsonwebtoken'
 import { JwtPayload } from './types'
 
-const JWT_SECRET = 'mercado_secreto_123'
+const  JWT_SECRET = process.env.JWT_SECRET as string
 
 export function jwtGuard (req: Request, res: Response, next: NextFunction) {
   const authHeader = req.headers['authorization']
